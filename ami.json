@@ -1,14 +1,14 @@
 {
     "variables": {
-        "aws_region": "us-east-1",
+        "aws_region": "",
         "aws_access_key": "",
         "aws_secret_key": "",
-        "instance_type": "t2.micro",
-        "subnet_id": "subnet-0eff18dbacadf8703",
+        "instance_type": "",
+        "subnet_id": "",
         "source_ami": "",
-        "ssh_username": "ubuntu",
-        "ami_description": "Ubuntu AMI for CSYE6225 in assignment5 - 1",
-        "ami_users": "039848784614"
+        "ssh_username": "",
+        "ami_description": "",
+        "ami_users": ""
     },
     "builders": [
         {
