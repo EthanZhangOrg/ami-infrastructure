@@ -11,5 +11,6 @@ jobs:
     steps:
     - name: build and register Ami
       run: 
+        cd ..
         ls -al
         # ./buildAmi.sh
