@@ -1,0 +1,14 @@
+name: Build and register the ami
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  buildAndRegisterAmi:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: build and register Ami
+      run: 
+        packer build -var-file=vars.json ami.json
