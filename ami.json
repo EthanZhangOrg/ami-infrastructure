@@ -1,14 +1,14 @@
 {
     "variables": {
         "aws_region": "us-east-1",
-        "aws_access_key": "",
-        "aws_secret_key": "",
+        "aws_access_key": "{{ env `AWS_ACCESS_KEY_ID` }}",
+        "aws_secret_key": "{{ env `AWS_SECRET_ACCESS_KEY` }}",
         "instance_type": "t2.micro",
-        "subnet_id": "",
-        "source_ami": "",
+        "subnet_id": "{{ env `SUBNET_ID` }}",
+        "source_ami": "{{ env `SOURCE_AMI` }}",
         "ssh_username": "ubuntu",
         "ami_description": "Ubuntu AMI for CSYE6225 in assignment5 - 1",
-        "ami_users": ""
+        "ami_users": "{{ env `AMI_USERS` }}"
     },
     "builders": [
         {
