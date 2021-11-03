@@ -7,7 +7,7 @@
         "subnet_id": "",
         "source_ami": "",
         "ssh_username": "ubuntu",
-        "ami_description": "Ubuntu AMI for CSYE6225 in assignment5",
+        "ami_description": "Ubuntu AMI for CSYE6225 in assignment5 - 1",
         "ami_users": ""
     },
     "builders": [
