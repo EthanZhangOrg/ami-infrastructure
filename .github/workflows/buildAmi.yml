@@ -19,7 +19,8 @@ jobs:
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AMI_USERS: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AMI_USERS: ${{ secrets.AMI_USERS }}
         SOURCE_AMI: ${{ secrets.SOURCE_AMI }}
         SUBNET_ID: ${{ secrets.SUBNET_ID }}
         PACKER_LOG: 1
+      
