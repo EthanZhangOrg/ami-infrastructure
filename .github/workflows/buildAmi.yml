@@ -1,0 +1,26 @@
+name: Build and register the ami
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  buildAndRegisterAmi:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: build and register Ami
+      uses: hashicorp/packer-github-actions@master
+      with:
+          command: build
+          arguments: "-color=false -on-error=abort"
+          target: ami.json
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AMI_USERS: ${{ secrets.AMI_USERS }}
+        SOURCE_AMI: ${{ secrets.SOURCE_AMI }}
+        SUBNET_ID: ${{ secrets.SUBNET_ID }}
+        PACKER_LOG: 1
+      
