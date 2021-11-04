@@ -38,8 +38,6 @@
             "type": "shell",
             "inline": [
                 "sudo apt-get update",
-                "sudo apt-get install nginx -y",
-                "sudo apt-get update",
                 "sudo apt install tomcat9 tomcat9-admin -y",
                 "sudo systemctl enable tomcat9",
                 "sudo ufw allow from any to any port 8080 proto tcp",
