@@ -7,7 +7,7 @@
         "subnet_id": "{{ env `SUBNET_ID` }}",
         "source_ami": "{{ env `SOURCE_AMI` }}",
         "ssh_username": "ubuntu",
-        "ami_description": "Ubuntu AMI for CSYE6225 in assignment5 - 1",
+        "ami_description": "Ubuntu AMI for CSYE6225 in assignment5",
         "ami_users": "{{ env `AMI_USERS` }}"
     },
     "builders": [
